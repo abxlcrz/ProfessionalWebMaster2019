@@ -1,0 +1,97 @@
+*{ padding: 0;
+	margin: 0;
+
+
+}
+html{ font-family: 'Khand', sans-serif; }
+
+.sangucheta{ font-family: 'Khand', sans-serif;
+font-size: 1.5em }
+@media (max-width:990px ){ .sidebar{ display: none  } }
+.texto{ color=white }
+.titulo{ color:black; }
+.titulo:hover{
+	color: green;
+
+
+
+}
+   .contenedor{ margin-top: 5%;
+                margin-left: auto;
+                margin-right: auto; }
+.circulo{ border-radius: 100% ;
+          filter: grayscale(1);
+          
+}
+.bg-champions {
+  
+  background-image: url("../img/champions.jpg");
+
+  
+  height: 100%;
+
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} 
+.bg-superliga {
+  
+  background-image: url("../img/champions.jpg");
+
+  
+  height: 100%;
+
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg-libertadores {
+  
+  background-image: url("../img/champions.jpg");
+
+  
+  height: 100%;
+
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card-body {
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 1.25rem;
+}
+.card-header {
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 0;
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.03);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+.conmebol{width: 80%;}
+.titular{
+    font-size: 1.2em;
+   
+    color: #fff;
+    text-shadow: 0 5px #0c1525;}
+
+    .ultimo{color: #fff;
+    text-shadow: 0 5px #0c1525;}
+   
+
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575px) {  }
+
+
+/*Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767px) { }
+
+/*Medium devices (tablets, less than 992px)*/
+@media (max-width: 991px) { }
+
+/* Large devices (desktops, less than 1200px)*/
+@media (max-width: 1199px) { 

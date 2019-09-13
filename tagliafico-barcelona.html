@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<title>Proyecto webmaster 2019</title>
+
+  <!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+<!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.4/css/mdb.min.css" rel="stylesheet">
+	
+	<!-- icono -->
+    <link rel="shortcut icon" href="img/sangucheta-logo.png">
+    <!--Mi hoja de estilos-->
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body> 
+	  <!--Header y menú principal-->
+	  <header>
+	  	      <!--Navbar-->
+<nav class="navbar  navbar-expand-lg navbar-light white fixed-top scrolling-navbar">
+<!--Container nav-->
+<div class="container">
+  <!-- logo-->
+    <a class="navbar-brand waves-effect" href="#">
+         <a class="navbar-brand waves-effect" href="index.html">
+     <strong class="green-text h3 font-weight-normal ">La Sangucheta</strong></a>
+
+
+  <!-- toggle -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+    aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- contenido responsive-->
+  <div class="collapse navbar-collapse" id="basicExampleNav">
+
+    <!-- items -->
+    <ul class="navbar-nav mr-auto">
+         <li class="nav-item ">
+          <a class="nav-link waves-effect" href="index.html">Inicio
+          <span class="sr-only">(current)</span>
+         </a>
+         </li>
+     
+
+      <!-- categorias -->
+          <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle waves-effect" id="navbarDropdownMenuLink" data-toggle="dropdown"   aria-haspopup="true"
+          aria-expanded="false">Categorias</a>
+          <div class="dropdown-menu dropdown-primary " aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item waves-effect" href="categorias/superliga.html">Superliga</a>
+          <a class="dropdown-item waves-effect" href="categorias/copa-libertadores.html">Copa Libertadores</a>
+          <a class="dropdown-item waves-effect" href="categorias/champions-league.html">Champions League</a>
+          </div>
+         </li> 
+         <li class="nav-item">
+         <a class="nav-link waves-effect" href="contacto.html">Contacto</a>
+         </li>   
+     </ul>
+    <!-- items -->
+    <ul class="navbar-nav nav-flex-icons">
+            <li class="nav-item">
+              <a href="https://www.facebook.com/mdbootstrap" class="nav-link border border-light rounded waves-effect mx-1" target="_blank">
+                <i class="fab fa-facebook-f"></i>Facebook
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="https://twitter.com/MDBootstrap" class="nav-link border border-light rounded  waves-effect mx-1" target="_blank">
+                <i class="fab fa-twitter"></i>Twitter
+              </a>
+            </li>
+         
+            </li>
+            <li class="nav-item">
+              <a href="https://twitch.tv" class="nav-link border border-light rounded waves-effect mx-1"
+                target="_blank">
+                <i class="fab fa-twitch mr-2"></i>Twitch
+              </a>
+            </li>
+            <li>
+              <div class="text-center">
+                <a href="" class="nav-link border border-light rounded  waves-effect btn-green mx-1 white-text" data-toggle="modal" data-target="#elegantModalForm">Iniciar Sesión</a>
+              </div>
+            </li>
+          </ul>
+
+  
+          </div>
+      <!-- Contenido responsive-toggle-->
+  </div>
+  <!--container nav-->
+
+</nav>
+<!--/.Navbar-->
+	  </header>
+	  <!-- Modal -->
+<div class="modal fade" id="elegantModalForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <!--Content-->
+    <div class="modal-content form-elegant">
+      <!--Header-->
+      <div class="modal-header text-center">
+        <h3 class="modal-title w-100 dark-grey-text font-weight-bold my-3" id="myModalLabel"><strong>Iniciar Sesion</strong></h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <!--Body-->
+      <div class="modal-body mx-4">
+        <!--Body-->
+        <div class="md-form mb-5">
+          <input type="email" id="Form-email1" class="form-control validate">
+          <label data-error="formato incorrecto" data-success="correcto" for="Form-email1">email</label>
+        </div>
+
+        <div class="md-form pb-3">
+          <input type="password" id="Form-pass1" class="form-control validate">
+          <label data-error="contraseña incorrecta" data-success="correcto" for="Form-pass1">contraseña</label>
+         
+        </div>
+
+        <div class="text-center mb-3">
+          <button type="button" class="btn green btn-block  z-depth-1a">logeate</button>
+        </div>
+        
+      </div>
+      <!--Footer-->
+      <div class="modal-footer mx-5 pt-3 mb-1">
+        <p class="font-small grey-text  text-right d-flex justify-content-center">No tenes cuenta? <a href="registro.html" class="blue-text ml-1">
+            registrate</a></p>
+      </div>
+    </div>
+    <!--/.Content-->
+  </div>
+</div>
+<!-- Modal -->
+
+
+
+
+ <!--main-->
+    <main class="mt-0 pt-5">
+    	<!--imagen noticia-->
+          <div class="view">
+                <img class="d-block w-100" src="img/tagliafico.jpeg" alt="First slide">
+                 <div class="mask pattern-1 flex-center ">
+                  
+                 </div>
+             <div class="carousel-caption  white-text titular"> 
+             	  <h3 class="h1-responsive font-weight-bolder" >Barcelona sigue de cerca a Nicolás Tagliafico</h3>
+             </div>
+         </div>
+         <!--imagen noticia-->
+
+        <div class="container">
+
+            <!--Section: Post-->
+            <section class="mt-4">
+
+                <!--div row-->
+                <div class="row">
+                	
+                    <!--columna-->
+                    <div class="col-md-8 mb-4">
+
+                        
+
+
+
+                        <!--Card-->
+                        <article class="card mb-4 wow fadeIn">
+
+                            <!--contenido-->
+                            <div class="card-body">
+
+                               
+
+
+                              
+
+                                <p class="h5 my-4">Nicolás Tagliafico es uno de los nombres que tiene en consideración Barcelona para el lateral izquierdo a futuro. El argentino ha sido ofrecido en las últimas semanas a la directiva culé, tras una gran temporada con Ajax.</p>
+
+                                <p>Los rendimientos del lateral izquierdo en el conjunto holandés han sido sorprendentes. Ajax está en cuartos de final de Champions League y mucho tiene que ver con lo hecho por Tagliafico. Por eso, el Barça lo sigue de cerca. </p>
+
+                                <p>Según Sport, Tagliafico es del gusto de la directiva del Barcelona y es un jugador que puede encajar perfectamente en la estructura del equipo. Sin embargo, su llegada no es una prioridad </p>
+                                <img class="img-fluid" src="img/tagliafico-ajax-porto.jpg" alt="">
+
+                                <p>Hace una semana, Jordi Alba renovó su contrato con Barcelona hasta 2024, por lo que el lateral zurdo será una fija en el equipo por un largo tiempo. Encontrarle un reemplazo ante cualquier eventualidad no es algo que el club catalán priorice, a pesar de que tenga a un buen prospecto como el lateral izquierdo y capitán de la Selección Argentina. </p>
+
+                                <p>Además, el club culé también ha seguido otros jugadores con distintos perfiles como Filipe Luis, Ferland Mendy y Nacho Monreal.</p>
+
+                                
+
+                              
+
+                            </div>
+                            <div class="card-header font-weight-bold">
+                                <span>Compartir en:</span>
+                                <div class=" row justify-content-center">
+                                     <!--Facebook-->
+                                     <a class=" btn btn-blue col-lg-3">
+                                         <i class="fab fa-facebook white-text mr-3"> </i>Facebook
+                                     </a>
+                                     <!--Twitter-->
+                                     <a class="btn btn-light-blue col-lg-3">
+                                         <i class="fab fa-twitter white-text mr-3 "> </i>Twitter
+                                     </a>
+               
+                                     </a>
+                                     <!--Twitch-->
+                                     <a class="btn btn-green col-lg-3">
+                                         <i class="fab fa-whatsapp white-text mr-3 " > </i>Whatsapp
+                                     </a>
+                            </div>
+                        </div>
+                        </article>
+                        <!--/.Card-->
+
+                        <!--Card-->
+                        <div class="card mb-4 wow fadeIn">
+
+                             <div class="card-header font-weight-bold">
+                                <span>Sobre mi:</span>
+                                <span class="pull-right">
+                                    <a href="https://www.facebook.com/abxlcrz" target="_blank">
+                                        <i class="fab fa-facebook-f mr-2 "></i>
+                                    </a>
+                                    <a href="https://mobile.twitter.com/abxlcrz" target="_blank">
+                                        <i class="fab fa-twitter mr-2 text-info"></i>
+                                    </a>
+                                    <a href="https://www.instagram.com/abelcruzm11/" target="_blank">
+                                        <i class="fab fa-instagram mr-2 pink-text"></i>
+                                    </a>
+                                 
+                                </span>
+                            </div>
+
+                            <!--Card content-->
+                            <div class="card-body">
+
+
+                                <div class="media d-block d-md-flex mt-3">
+                                    <img class="d-flex mb-3 mx-auto z-depth-1 circulo grey-scale " src="img/perfil.jpg" alt="Generic placeholder image"
+                                        style="width: 100px;">
+                                    <div class="media-body text-center text-md-left ml-md-3 ml-0">
+                                        <h5 class="mt-0 font-weight-bold">Abel Cruz
+                                        </h5>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias obcaecati consequatur temporibus explicabo laboriosam, labore totam, earum, cum neque, consequuntur odit sed magnam illo in quos deserunt eaque dolor. Suscipit?</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <!--/.Card-->
+
+                        
+                    </div>
+                    <!--Grid column-->
+                    <!--sidebar-->
+	
+
+
+                    <!--aside-->
+                    <aside class="col-md-4 mb-4">
+
+                    
+                        
+                        
+                          <!--Table-->
+                        <div class="sticky card mb-4 wow fadeIn ">
+                          <!--table-->
+                          <table id="tablePreview" class="table table-hover table-sm">
+                          <!--Table head-->
+                            <thead>
+                              <tr>
+                                <th>#</th>
+                                <th>Equipo</th>
+                                <th>Pts</th>
+                                <th>PJ</th>
+                                
+                              </tr>
+                            </thead>
+                            <!--Table head-->
+                            <!--Table body-->
+                            <tbody>
+                              <tr class="light-green">
+                                <th scope="row">1</th>
+                                <td>Racing</td>
+                                <td>55</td>
+                                <td>23</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">2</th>
+                                <td>Defensa y Justicia</td>
+                                <td>51</td>
+                                <td>23</td>
+                              </tr>
+                          
+                              <tr>
+                                <th scope="row">3</th>
+                                <td>Boca Juniors</td>
+                                <td>47</td>
+                                <td>23</td>   
+                              </tr>
+                              <tr>
+                                <th scope="row">4</th>
+                                <td>River</td>
+                                <td>42</td>
+                                <td>23</td>   
+                              </tr>
+                              <tr>
+                                <th scope="row">5</th>
+                                <td>Atl Tucuman</td>
+                                <td>39</td>
+                                <td>23</td>   
+                              </tr>
+                              <tr>
+                                <th scope="row">6</th>
+                                <td>Velez</td>
+                                <td>37</td>
+                                <td>23</td>   
+                              </tr>
+                              <tr>
+                                <th scope="row">7</th>
+                                <td>Union</td>
+                                <td>34</td>
+                                <td>23</td>   
+                              </tr>
+                              <tr>
+                                <th scope="row">8</th>
+                                <td>Talleres</td>
+                                <td>33</td>
+                                <td>23</td>   
+                              </tr>
+                              <tr>
+                                <th scope="row">9</th>
+                                <td>Independiente</td>
+                                <td>32</td>
+                                <td>23</td>   
+                              </tr>
+                              <tr>
+                                <th scope="row">10</th>
+                                <td>Huracan</td>
+                                <td>32</td>
+                                <td>23</td>   
+                              </tr>
+                              <tr>
+                                <th scope="row">11</th>
+                                 <td>Aldosivi</td>
+                                <td>32</td>
+                                <td>23</td>    
+                              </tr>
+                              <tr>
+                                <th scope="row">12</th>
+                                 <td>Tigre</td>
+                                <td>32</td>
+                                <td>23</td>  
+                              </tr>
+                              <tr>
+                                <th scope="row">13</th>
+                                <td>Lanus</td>
+                                <td>31</td>
+                                <td>23</td>   
+                              </tr>
+                              <tr>
+                                <th scope="row">14</th>
+                                <td>Godoy Cruz</td>
+                                <td>29</td>
+                                <td>23</td>   
+                              </tr>
+                              <tr>
+                                <th scope="row">15</th>
+                                <td>Banfield</td>
+                                <td>28</td>
+                                <td>23</td>   
+                              </tr>
+                               <tr>
+                                <th scope="row">16</th>
+                                <td>Estudiantes (LP)</td>
+                                <td>27</td>
+                                <td>23</td>   
+                              </tr>
+                               <tr>
+                                <th scope="row">17</th>
+                                <td>Newells</td>
+                                <td> 27</td>
+                                <td>23</td>   
+                              </tr>
+                               <tr>
+                                <th scope="row">18</th>
+                                <td>Gimnasia (LP)</td>
+                                <td>25 </td>
+                                <td>23</td>   
+                              </tr>
+                               <tr>
+                                <th scope="row">19</th>
+                                <td>Patronato</td>
+                                <td>23 </td>
+                                <td>23</td>   
+                              </tr>
+                               <tr>
+                                <th scope="row">20</th>
+                                <td>Rosario Central</td>
+                                <td>23 </td>
+                                <td>23</td>   
+                              </tr>
+                               <tr>
+                                <th scope="row">21</th>
+                                <td>Argentinos</td>
+                                <td>22 </td>
+                                <td>23</td>   
+                              </tr>
+                               <tr>
+                                <th scope="row">22</th>
+                                <td>Belgrano</td>
+                                <td>21 </td>
+                                <td>23</td>   
+                              </tr>
+                               <tr>
+                                <th scope="row">23</th>
+                                <td>San Martin(SJ)</td>
+                                <td>21 </td>
+                                <td>23</td>   
+                              </tr>
+                               <tr>
+                                <th scope="row">24</th>
+                                <td>Colon</td>
+                                <td>21</td>
+                                <td>23</td>   
+                              </tr>
+                               <tr>
+                                <th scope="row">25</th>
+                                <td>San Martin (T)</td>
+                                <td>21</td>
+                                <td>23</td>   
+                              </tr>
+                               <tr>
+                                <th scope="row">26</th>
+                                <td>San Lorenzo</td>
+                                <td>20 </td>
+                                <td>21</td>   
+                              </tr>
+                              <tr id="sticky-stopper">
+                                
+                              </tr>
+                            </tbody>
+                            <!--Table body-->
+                          </table>
+                          <!--Table-->
+
+                    </aside>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+
+            </section>
+            <!--Section: Post-->
+
+        </div>
+    </main>
+    <!--Main layout-->
+
+  <!-- Footer -->
+    <footer class="page-footer text-center font-small unique-color-dark darken-2 mt-4 wow fadeIn ">
+
+        <!-- redes sociales -->
+        <div class="green">
+            <div class="container">
+                <!--div row-->
+                <div class="row py-4 d-flex align-items-center">
+
+                    <!--texto redes-->
+                    <div class="col-md-5 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                        <h4 class="mb-0 white-text">Seguinos en nuestras redes sociales!</h4>
+                    </div>
+                    <!--texto redes-->
+
+                    <!--iconos redes-->
+                    <div class="col-md-7 col-lg-7 text-center text-md-right">
+                        <!--Facebook-->
+                        <a class="fb-ic ml-0">
+                            <i class="fab fa-facebook white-text mr-3 btn-lg"> </i>
+                        </a>
+                        <!--Twitter-->
+                        <a class="tw-ic">
+                            <i class="fab fa-twitter white-text mr-3 btn-lg"> </i>
+                        </a>
+               
+                        </a>
+                        <!--Twitch-->
+                        <a class="li-ic">
+                            <i class="fab fa-twitch white-text mr-3 btn-lg" > </i>
+                        </a>
+                        <!--Instagram-->
+                        <a class="ins-ic">
+                            <i class="fab fa-instagram white-text mr-3 btn-lg"> </i>
+                        </a>
+                         <!--YouTube-->
+                        <a class="yt-ic">
+                            <i class="fab fa-youtube white-text mr-3 btn-lg"> </i>
+                        </a>
+                    </div>
+                    <!--iconos redes-->
+
+                </div>
+                <!--div row-->
+            </div>
+        </div>
+        <!-- redes sociales -->
+
+        <!--links-->
+        <div class="container mt-5 mb-4 text-center text-md-left">
+            <div class="row mt-3 justify-content-around">
+
+                <!--web-->
+                <div class="col-md-4 col-lg-4 col-xl-3 mb-4">
+                    <h6 class="text-uppercase font-weight-bold">
+                        <strong>La sangucheta</strong>
+                    </h6>
+                    <hr class="green accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>La sangucheta es un portal de noticias "amateur" referidas al deporte </p>
+                </div>
+                <!--web-->
+
+                
+                <!--contacto-->
+                <div class="col-md-4 col-lg-4 col-xl-3 mb-4">
+                    <h6 class="text-uppercase font-weight-bold">
+                       <a href="contacto.html"><strong>Contacto</strong></a> 
+                    </h6>
+                    <hr class="green accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <i class="fa fa-home mr-3"></i> Av. Santa Fe 3550, CABA</p>
+                    <p>
+                        <i class="fa fa-envelope mr-3"></i> lasangucheta@indicom.ar</p>
+
+                    <p>
+                        <i class="fa fa-phone mr-3"></i>0303456 </p>
+                    
+                </div>
+                <!--contacto-->
+
+            </div>
+        </div>
+        <!--links-->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2019 La sangucheta. Todos los derechos reservados.
+            
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+
+
+<!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.4/js/mdb.min.js"></script>
+  <script type="text/javascript">
+    // Animations initialization
+    new WOW().init();
+
+  </script>	
+
+  <script>
+$( ".leer" ).addClass( "green-text btn justify-content-center" );
+$(".jugador").addClass("rgba-green-light");
+
+
+</script>
+
+<script>
+	$(document).ready(function(){
+		$(function () {
+    $(".sticky").sticky({
+        topSpacing: 90
+        , zIndex: 2
+        , stopper: "#sticky-stopper"
+    });
+});
+	});
+</script>
+</body>
+</html>

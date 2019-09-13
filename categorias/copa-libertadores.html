@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<title>Proyecto webmaster 2019</title>
+
+  <!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+<!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.4/css/mdb.min.css" rel="stylesheet">
+	
+	<!-- icono -->
+    <link rel="shortcut icon" href="img/sangucheta-logo.png">
+    <!--Mi hoja de estilos-->
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body> 
+	  <!--Header y menú principal-->
+	  <header>
+	  	      <!--Navbar-->
+<nav class="navbar  navbar-expand-lg navbar-light white fixed-top scrolling-navbar">
+<!--Container nav-->
+<div class="container">
+  <!-- logo-->
+    <a class="navbar-brand waves-effect" href="#">
+     <strong class="green-text">La Sangucheta</strong></a>
+
+
+  <!-- toggle -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+    aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- contenido responsive-->
+  <div class="collapse navbar-collapse" id="basicExampleNav">
+
+    <!-- items -->
+    <ul class="navbar-nav mr-auto">
+         <li class="nav-item active">
+          <a class="nav-link waves-effect" href="index.html">Inicio
+          <span class="sr-only">(current)</span>
+         </a>
+         </li>
+     
+
+      <!-- categorias -->
+          <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle waves-effect" id="navbarDropdownMenuLink" data-toggle="dropdown"   aria-haspopup="true"
+          aria-expanded="false">Categorias</a>
+          <div class="dropdown-menu dropdown-primary " aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item waves-effect" href="categorias/superliga.html">Superliga</a>
+          <a class="dropdown-item waves-effect" href="categorias/copa-libertadores.html">Copa Libertadores</a>
+          <a class="dropdown-item waves-effect" href="categorias/champions-league.html">Champions League</a>
+          </div>
+         </li> 
+         <li class="nav-item">
+         <a class="nav-link waves-effect" href="contacto.html">Contacto</a>
+         </li>   
+     </ul>
+    <!-- items -->
+    <ul class="navbar-nav nav-flex-icons">
+            <li class="nav-item">
+              <a href="https://www.facebook.com/mdbootstrap" class="nav-link border border-light rounded waves-effect mx-1" target="_blank">
+                <i class="fab fa-facebook-f"></i>Facebook
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="https://twitter.com/MDBootstrap" class="nav-link border border-light rounded  waves-effect mx-1" target="_blank">
+                <i class="fab fa-twitter"></i>Twitter
+              </a>
+            </li>
+         
+            </li>
+            <li class="nav-item">
+              <a href="https://twitch.tv" class="nav-link border border-light rounded waves-effect mx-1"
+                target="_blank">
+                <i class="fab fa-twitch mr-2"></i>Twitch
+              </a>
+            </li>
+            <li>
+              <div class="text-center">
+                <a href="" class="nav-link border border-light rounded  waves-effect btn-green mx-1 white-text" data-toggle="modal" data-target="#elegantModalForm">Iniciar Sesión</a>
+              </div>
+            </li>
+          </ul>
+
+  
+          </div>
+      <!-- Contenido responsive-toggle-->
+  </div>
+  <!--container nav-->
+
+</nav>
+<!--/.Navbar-->
+	  </header>
+	  <!-- Modal -->
+<div class="modal fade" id="elegantModalForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <!--Content-->
+    <div class="modal-content form-elegant">
+      <!--Header-->
+      <div class="modal-header text-center">
+        <h3 class="modal-title w-100 dark-grey-text font-weight-bold my-3" id="myModalLabel"><strong>Iniciar Sesion</strong></h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <!--Body-->
+      <div class="modal-body mx-4">
+        <!--Body-->
+        <div class="md-form mb-5">
+          <input type="email" id="Form-email1" class="form-control validate">
+          <label data-error="formato incorrecto" data-success="correcto" for="Form-email1">email</label>
+        </div>
+
+        <div class="md-form pb-3">
+          <input type="password" id="Form-pass1" class="form-control validate">
+          <label data-error="contraseña incorrecta" data-success="correcto" for="Form-pass1">contraseña</label>
+         
+        </div>
+
+        <div class="text-center mb-3">
+          <button type="button" class="btn green btn-block  z-depth-1a">logeate</button>
+        </div>
+        
+      </div>
+      <!--Footer-->
+      <div class="modal-footer mx-5 pt-3 mb-1">
+        <p class="font-small grey-text  text-right d-flex justify-content-center">No tenes cuenta? <a href="registro.html" class="blue-text ml-1">
+            registrate</a></p>
+      </div>
+    </div>
+    <!--/.Content-->
+  </div>
+</div>
+<!-- Modal -->
+
+<!--Carousel section-->
+<section class="mt-5">
+	<!--Carousel Wrapper-->
+<div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
+  <!--Indicators-->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-2" data-slide-to="1"></li>
+    <li data-target="#carousel-example-2" data-slide-to="2"></li>
+  </ol>
+  <!--/.Indicators-->
+  <!--Slides-->
+  <div class="carousel-inner" role="listbox">
+    <div class="carousel-item active">
+      <div class="view">
+        <img class="d-block w-100" src="img/messi-croacia2006.jpg" alt="First slide">
+        <div class="mask rgba-black-light"></div>
+      </div>
+      <div class="carousel-caption">
+        <h3 class="h3-responsive">Hace 13 años messi hacía su primero gol en la mayor</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda nisi iure magnam omnis, corrupti dolorum placeat, quaerat cupiditate laborum. Reprehenderit debitis, perferendis. Saepe error, quaerat culpa perspiciatis quis, incidunt eaque!</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <!--Mask color-->
+      <div class="view">
+        <img class="d-block w-100" src="img/belluschi-almiron.jpg" alt="Second slide">
+        <div class="mask rgba-black-strong"></div>
+      </div>
+      <div class="carousel-caption">
+        <h3 class="h3-responsive">San Lorenzo quiere su primer triunfo con Almiron al mando</h3>
+        <p>Hace 4 meses que el ciclón no levanta cabeza, el DT pone toda la carne al asador</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <!--Mask color-->
+      <div class="view">
+        <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(9).jpg" alt="Third slide">
+        <div class="mask rgba-black-slight"></div>
+      </div>
+      <div class="carousel-caption">
+        <h3 class="h3-responsive">Slight mask</h3>
+        <p>Third text</p>
+      </div>
+    </div>
+  </div>
+  <!--/.Slides-->
+  <!--Controls-->
+  <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+  <!--/.Controls-->
+</div>
+<!--/.Carousel Wrapper-->
+</section>
+
+
+	  <!--Contenedor principal-->
+<main class=" container row  my-5 pt-3 mx-auto wow fadeIn " >
+
+	
+<!--Seccion de articulos-->
+	<section class="container col-lg-9"> 
+
+
+		
+	
+
+
+
+    <!--Grid row-->
+    <div class="row">
+
+        <!--Grid column-->
+        <div class="col-md-12 mb-4">
+            <div class="card card-image" style="background-image: url(img/franco-smaniotti.jpg);">
+                <div class="text-white text-center d-flex align-items-end rgba-black-light py-5 px-4">
+                    <div>
+                      
+                        <h3 class="card-title py-3 font-weight-bold"><strong>This is card title</strong></h3>
+                        <p class="pb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugiat, laboriosam, voluptatem,
+                            optio vero odio nam sit officia accusamus minus error nisi architecto nulla ipsum dignissimos.
+                            Odit sed qui, dolorum!</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-6 mb-4">
+            <div class="card card-image" style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Nature/6-col/img%20%2873%29.jpg);">
+                <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
+                    <div>
+                        <h6 class="pink-text"><i class="fas fa-chart-pie"></i><strong> Marketing</strong></h6>
+                        <h3 class="card-title py-3 font-weight-bold"><strong>This is card title</strong></h3>
+                        <p class="pb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugiat, laboriosam, voluptatem,
+                            optio vero odio nam sit officia accusamus minus error nisi architecto nulla ipsum dignissimos.
+                            Odit sed qui, dolorum!</p>
+                        <a class="btn btn-pink btn-rounded"><i class="far fa-clone left"></i> View project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-6 mb-4">
+            <div class="card card-image" style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/City/6-col/img%20%2847%29.jpg);">
+                <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
+                    <div>
+                        <h6 class="green-text"><i class="far fa-eye"></i><strong> Entertainment</strong></h6>
+                        <h3 class="card-title py-3 font-weight-bold"><strong>This is card title</strong></h3>
+                        <p class="pb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugiat, laboriosam, voluptatem,
+                            optio vero odio nam sit officia accusamus minus error nisi architecto nulla ipsum dignissimos.
+                            Odit sed qui, dolorum!</p>
+                        <a class="btn btn-success btn-rounded"><i class="far fa-clone left"></i> View project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Grid column-->
+
+    </div>
+    <!--Grid row-->
+
+
+			
+
+	</section>
+	<!--Seccion de articulos-->
+
+
+    <!--sidebar-->
+	<aside class="sidebar col-lg-3  my-2"> 
+
+       <!--Jugador de la fecha-->
+       <div class="card  jugador "> 
+             <strong><h4 class="text-center">El jugador de la fecha</h4></strong>
+   
+              <div>
+              	<img src="img/nico-fernandez.png" class="img-fluid  circulo mx-auto " alt="nicofernandez">
+              </div>
+
+              <div class="pt-2"> 
+              	<p> Nicolas Fernandez  metió un hat-trick en varela para que el halcón siga en la pelea por el campeonato. "Vamos a salir campeones, sin duda" dijo.</p>
+              </div>
+        </div>  
+ 
+	</aside>
+	<!--Sidebar-->
+
+
+
+</main>
+
+  <!-- Footer -->
+    <footer class="page-footer text-center font-small unique-color-dark darken-2 mt-4 wow fadeIn ">
+
+        <!-- redes sociales -->
+        <div class="green">
+            <div class="container">
+                <!--div row-->
+                <div class="row py-4 d-flex align-items-center">
+
+                    <!--texto redes-->
+                    <div class="col-md-5 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                        <h4 class="mb-0 white-text">Seguinos en nuestras redes sociales!</h4>
+                    </div>
+                    <!--texto redes-->
+
+                    <!--iconos redes-->
+                    <div class="col-md-7 col-lg-7 text-center text-md-right">
+                        <!--Facebook-->
+                        <a class="fb-ic ml-0">
+                            <i class="fab fa-facebook white-text mr-3 btn-lg"> </i>
+                        </a>
+                        <!--Twitter-->
+                        <a class="tw-ic">
+                            <i class="fab fa-twitter white-text mr-3 btn-lg"> </i>
+                        </a>
+               
+                        </a>
+                        <!--Twitch-->
+                        <a class="li-ic">
+                            <i class="fab fa-twitch white-text mr-3 btn-lg" > </i>
+                        </a>
+                        <!--Instagram-->
+                        <a class="ins-ic">
+                            <i class="fab fa-instagram white-text mr-3 btn-lg"> </i>
+                        </a>
+                         <!--YouTube-->
+                        <a class="yt-ic">
+                            <i class="fab fa-youtube white-text mr-3 btn-lg"> </i>
+                        </a>
+                    </div>
+                    <!--iconos redes-->
+
+                </div>
+                <!--div row-->
+            </div>
+        </div>
+        <!-- redes sociales -->
+
+        <!--links-->
+        <div class="container mt-5 mb-4 text-center text-md-left">
+            <div class="row mt-3 justify-content-around">
+
+                <!--web-->
+                <div class="col-md-4 col-lg-4 col-xl-3 mb-4">
+                    <h6 class="text-uppercase font-weight-bold">
+                        <strong>La sangucheta</strong>
+                    </h6>
+                    <hr class="green accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>La sangucheta es un portal de noticias "amateur" referidas al deporte </p>
+                </div>
+                <!--web-->
+
+                
+                <!--contacto-->
+                <div class="col-md-4 col-lg-4 col-xl-3 mb-4">
+                    <h6 class="text-uppercase font-weight-bold">
+                       <a href="contacto.html"><strong>Contacto</strong></a> 
+                    </h6>
+                    <hr class="green accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <i class="fa fa-home mr-3"></i> Av. Santa Fe 3550, CABA</p>
+                    <p>
+                        <i class="fa fa-envelope mr-3"></i> lasangucheta@indicom.ar</p>
+
+                    <p>
+                        <i class="fa fa-phone mr-3"></i>0303456 </p>
+                    
+                </div>
+                <!--contacto-->
+
+            </div>
+        </div>
+        <!--links-->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2019 La sangucheta. Todos los derechos reservados.
+            
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+
+
+<!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.4/js/mdb.min.js"></script>
+  <script type="text/javascript">
+    // Animations initialization
+    new WOW().init();
+
+  </script>	
+  <script>
+$( ".leer" ).addClass( "green-text btn justify-content-center" );
+$(".jugador").addClass("rgba-green-light");
+
+</script>
+<!--<script>
+	$(document).ready(function(){
+		$(".noticia").hover(function(){
+			$(".zoom").css("transform","scale(1.2,1.2)"), function(){
+				$(this).css("transform","scale(1,1)");
+			};
+		});
+	});
+</script>-->
+</body>
+</html>
